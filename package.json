@@ -1,0 +1,32 @@
+{
+  "name": "tranyu-nextjs-starter",
+  "version": "1.0.0",
+  "description": "nextjs 脚手架",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "vbcc2001",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^15.1.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5 || 注释: TypeScript 的 Node.js 类型声明库",
+    "@types/react": "^19.0.3 || 注释: TypeScript 的 React 类型声明库",
+    "@types/react-dom": "^19 || 注释: TypeScript 的 React Dom 类型声明库",
+    "eslint": "^9.17.0 ||  注释: 代码检查工具",
+    "eslint-config-next": "^15.1.3 ||  注释: Next 上配置 eslint 插件",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TranYu-AI/tranyu_nextjs_starter.git"  
+  }
+}
