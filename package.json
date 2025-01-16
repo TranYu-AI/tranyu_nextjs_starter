@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "webpack || 注释: 通过webpack打包",
     "prepare": "npm run build"
   },
   "keywords": [],
@@ -20,13 +20,16 @@
     "@types/node": "^22.10.5 || 注释: TypeScript 的 Node.js 类型声明库",
     "@types/react": "^19.0.3 || 注释: TypeScript 的 React 类型声明库",
     "@types/react-dom": "^19 || 注释: TypeScript 的 React Dom 类型声明库",
+    "css-loader": "^7.1.2 || 注释: 允许 Webpack 解析 CSS 文件，并将其转换为 JavaScript 模块",
     "eslint": "^9.17.0 ||  注释: 代码检查工具",
     "eslint-config-next": "^15.1.3 ||  注释: Next 上配置 eslint 插件",
-    "prettier": "^3.4.2",
-    "typescript": "^5.7.2"
+    "prettier": "^3.4.2 || 注释: 格式化代码的工具",
+    "style-loader": "^4.0.0 || 注释: 将由 css-loader 解析后的 CSS 代码注入到浏览器的 <style> 标签中",
+    "typescript": "^5.7.2 || 注释: 支持TS代码",
+    "webpack": "^5.97.1 || 注释: 打包工具Webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TranYu-AI/tranyu_nextjs_starter.git"  
+    "url": "git+https://github.com/TranYu-AI/tranyu_nextjs_starter.git"
   }
 }

@@ -1,28 +1,71 @@
 {
   "compilerOptions": {
-    "target": "ESNext", 
+    // 指定编译生成的目标 JavaScript 版本，这里使用 ESNext，表示生成最新的 ECMAScript 版本代码
+    "target": "ESNext",
+
+    // 指定要包含在编译中基础库声明文件的列表：
+    // "dom" 表示包含 DOM API
+    // "dom.iterable" 表示包含可迭代的 DOM API（如 NodeList、HTMLCollection 等）
+    // "esnext" 表示包含最新 ECMAScript 语言特性的定义
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
+
+    // 允许 TypeScript 编译器编译 .js 文件（通常只编译 .ts/.tsx，但在渐进迁移或混合项目时会用到）
+    "allowJs": false,
+
+    // 跳过第三方库声明文件的类型检查，可以显著加快编译速度，但可能隐藏一些类型问题
+    "skipLibCheck": false,
+
+    // 启用所有严格类型检查选项的总开关，比如 strictNullChecks、noImplicitAny 等
     "strict": true,
+
+    // 设置是否生成编译输出文件：
+    // 当值为 false 时，编译器会输出转译后的文件到 outDir 指定文件夹
+    // 当值为 true 时，编译器只进行类型检查而不输出文件
     "noEmit": false,
+
+    // 编译输出文件的目标目录
     "outDir": "dist",
+
+    // 启用 ES 模块的互操作性，以兼容 commonjs 等不同模块系统的导入/导出方式
     "esModuleInterop": true,
+
+    // 指定生成的模块系统为 ESNext（如 ESM）
     "module": "ESNext",
+
+    // 设置模块解析策略为 'bundler'，通常在使用打包工具（Webpack、Rollup、Vite 等）时会用到
     "moduleResolution": "bundler",
+
+    // 允许在 TypeScript 中导入 JSON 文件（需要 JSON 模块声明）
     "resolveJsonModule": true,
+
+    // 每个文件都被单独编译，用于更好的与 Babel 或其他编译器进行集成
     "isolatedModules": true,
+
+    // 指定 JSX 代码如何被处理：
+    // "preserve" 表示保留 JSX 语法到输出，通常供后续的 Babel 或其他工具进行处理
     "jsx": "preserve",
+
+    // 启用增量编译，会在下次编译时加快编译速度（会生成 .tsbuildinfo 文件）
     "incremental": true,
+
+    // 这里配置了一个编译插件数组：
+    // "next" 是 Next.js 相关的 TypeScript 插件，可以处理 Next.js 对应的类型或特性
     "plugins": [
       {
         "name": "next"
       }
     ],
+
+    // paths 用于设置路径别名。例如:
+    // "@/*": ["./*"] 表示在引入模块时，"@/xxx" 会被解析为当前根目录下 "./xxx"
     "paths": {
       "@/*": ["./*"]
     }
   },
+
+  // 指定编译器需要包含的文件或目录，这里只包含 src 目录及其子目录
   "include": ["src"],
+
+  // 指定编译器在编译时需要排除的文件或目录，这里排除了 node_modules 目录
   "exclude": ["node_modules"]
 }
