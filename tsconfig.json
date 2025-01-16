@@ -63,6 +63,13 @@
     }
   },
 
+  // webpack 打包时 ts-node 不支持除 commonjs 以外的任何模块语法。
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+
   // 指定编译器需要包含的文件或目录，这里只包含 src 目录及其子目录
   "include": ["src"],
 
