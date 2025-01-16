@@ -1,5 +1,5 @@
 {
-  "name": "tranyu-nextjs-starter",
+  "name": "@tranyu-nextjs-starter/ui",
   "version": "1.0.0",
   "description": "nextjs 脚手架",
   "main": "dist/index.js",
