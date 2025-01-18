@@ -1,10 +1,5 @@
-// src/components/Button.tsx
-import { ReactNode } from 'react';
-
-type ButtonProps = {
-  children: ReactNode;
-  onClick?: () => void;
-};
+import React from 'react';
+import { ButtonProps } from "./type";
 
 export default function Button({ children, onClick }: ButtonProps) {
   return (

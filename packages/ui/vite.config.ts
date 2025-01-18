@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: './src/index.tsx',  // 模块的入口文件
+      entry: './src/components/index.tsx',  // 模块的入口文件
       name: 'ui',  // 你希望导出的模块名称
       fileName: (format) => `ui.${format}.js`,  // 输出文件名格式
     },

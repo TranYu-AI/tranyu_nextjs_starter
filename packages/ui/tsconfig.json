@@ -12,20 +12,22 @@
     "allowJs": false, // 允许 TypeScript 编译器编译 .js 文件（通常只编译 .ts/.tsx，但在渐进迁移或混合项目时会用到）
     "isolatedModules": true, // 启用隔离模块，保证每个文件都可以单独编译，避免跨文件的隐式依赖
     "jsx": "preserve", // 指定 JSX 代码如何被处理："preserve" 表示保留 JSX 语法到输出，通常供后续的其他工具进行处理
+    // "jsx": "react", // 使用 React 的 JSX 转换方式
     "esModuleInterop": true,     // 启用 ES 模块的互操作性，以兼容 commonjs 等不同模块系统的导入/导出方式
     "resolveJsonModule": true, // 允许在 TypeScript 中导入 JSON 文件（需要 JSON 模块声明）
     "paths": { "@/*": ["./*"] }, // 设置路径别名, "@/xxx" 会被解析为当前根目录下 "./xxx"
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",      // 指定存储TypeScript构建信息的文件路径
-    
+
     /* ------------------------------------------------------------------------------------------ */  
     /* ---------------------------------------Bundler 打包模式------------------------------------ */  
     /* ------------------------------------------------------------------------------------------ */  
     "noEmit": true, // 设置是否生成编译输出文件：当值为 true 时，编译器只进行类型检查而不输出文件，输出文件交给打包工具处理
     "moduleResolution": "bundler", // 设置模块解析策略，'bundler'通常在使用打包工具（Webpack、Rollup、Vite 等）时会用
+    // "moduleResolution": "Node", // 模块解析策略为 Node.js 模式
     "moduleDetection": "force",  // 强制将所有文件作为模块处理
     "incremental": true,    // 启用增量编译，会在下次编译时加快编译速度（会生成 .tsbuildinfo 文件）
     "allowImportingTsExtensions": true, //在导入语句中显式指定 .ts 或 .tsx 扩展名，以确保构建工具正确处理文件。
-
+    "declaration": true, // 生成 .d.ts 类型声明文件
     /* ------------------------------------------------------------------------------------------ */  
     /* ---------------------------------------Linting 代码检查------------------------------------ */  
     /* ------------------------------------------------------------------------------------------ */  
@@ -41,7 +43,7 @@
     "plugins": [ { "name": "next" } ], // Next.js TypeScript 插件 可以处理对应的类型或特性
   },
 
-  "include": ["src", "vite-env.d.ts"], // 指定编译器需要包含的文件或目录
+  "include": ["src/components", "vite-env.d.ts"], // 指定编译器需要包含的文件或目录
 }
 
 
