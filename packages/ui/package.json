@@ -28,7 +28,7 @@
     "prettier": "^3.4.2 || 注释: 格式化代码的工具",
     "style-loader": "^4.0.0 || 注释: Webpack 插件,将由 css-loader 解析后的 CSS 代码注入到浏览器的 <style> 标签中",
     "ts-node": "^10.9.2 || 注释: TS代码运行时加载器, 加载 webpack.config.ts 会用到",
-    "typescript": "^5.7.3 || 注释: 支持TS代码",
+    "typescript": "^5.7.3 || 注释: 支持TS代码开发",
     "webpack": "^5.97.1 || 注释: 打包工具Webpack",
     "webpack-cli": "^6.0.1 || 注释: Webpack 的命令行工具 (Command Line Interface)。"
   },
