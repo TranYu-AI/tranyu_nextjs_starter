@@ -1,12 +1,12 @@
 {
   "name": "@tranyu-nextjs-starter/ui",
   "version": "1.0.0",
-  "description": "nextjs 脚手架",
+  "description": "@tranyu-nextjs-starter/ui",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "webpack",
+    "build": "tsc && vite build",
     "prepare": "npm run build"
   },
   "keywords": [],
@@ -21,16 +21,11 @@
     "@types/node": "^22.10.7 || 注释: TypeScript 的 Node.js 类型声明库",
     "@types/react": "^19.0.3 || 注释: TypeScript 的 React 类型声明库",
     "@types/react-dom": "^19 || 注释: TypeScript 的 React Dom 类型声明库",
-    "@types/webpack": "^5.28.5",
-    "css-loader": "^7.1.2 || 注释: Webpack 插件,允许 Webpack 解析 CSS 文件，并将其转换为 JavaScript 模块",
     "eslint": "^9.17.0 ||  注释: 代码检查工具",
     "eslint-config-next": "^15.1.3 ||  注释: Next 上配置 eslint 插件",
     "prettier": "^3.4.2 || 注释: 格式化代码的工具",
-    "style-loader": "^4.0.0 || 注释: Webpack 插件,将由 css-loader 解析后的 CSS 代码注入到浏览器的 <style> 标签中",
-    "ts-node": "^10.9.2 || 注释: TS代码运行时加载器, 加载 webpack.config.ts 会用到",
     "typescript": "^5.7.3 || 注释: 支持TS代码开发",
-    "webpack": "^5.97.1 || 注释: 打包工具Webpack",
-    "webpack-cli": "^6.0.1 || 注释: Webpack 的命令行工具 (Command Line Interface)。"
+    "vite": "^6.0.7 || 注释：超快速的前端构建工具"
   },
   "repository": {
     "type": "git",

@@ -1,13 +1,26 @@
 {
-  "name": "vite",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@tranyu-nextjs-starter/utils",
+  "version": "1.0.0",
+  "description": "@tranyu-nextjs-starter/utils",
+  "private": false,
+  "publishConfig": { "access": "public" },
   "type": "module",
+  "main": "dist/utils.umd.js",
+  "module": "dist/utils.es.js",
+  "types": "dist/utils.d.ts",
+  "keywords": [],
+  "author": "vbcc2001",
+  "license": "ISC",
   "scripts": {
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "typescript": "^5.7.3 || 注释: 支持TS代码开发",
     "vite": "^6.0.7 || 注释：超快速的前端构建工具"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TranYu-AI/tranyu_nextjs_starter.git"
   }
 }
