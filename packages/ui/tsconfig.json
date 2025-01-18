@@ -41,7 +41,7 @@
     "plugins": [ { "name": "next" } ], // Next.js TypeScript 插件 可以处理对应的类型或特性
   },
 
-  "include": ["src"], // 指定编译器需要包含的文件或目录
+  "include": ["src", "vite-env.d.ts"], // 指定编译器需要包含的文件或目录
 }
 
 
