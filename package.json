@@ -10,7 +10,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
+    "prettier": "^3.4.2 || 注释: 格式化代码的工具",
     "turbo": "^2.3.3",
     "typescript": "5.5.4"
   },
