@@ -24,6 +24,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@tranyu-nextjs-starter/config": "*",
     "@types/node": "^22.10.7 || 注释: TypeScript 的 Node.js 类型声明库",
     "@types/react": "^19.0.3 || 注释: TypeScript 的 React 类型声明库",
     "@types/react-dom": "^19 || 注释: TypeScript 的 React Dom 类型声明库",

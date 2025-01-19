@@ -1,8 +1,13 @@
 {
-  "name": "@repo/eslint-config",
-  "version": "0.0.0",
-  "type": "module",
+  "name": "@tranyu-nextjs-starter/config",
+  "version": "1.0.0",
+  "description": "@tranyu-nextjs-starter/config",
   "private": true,
+  "publishConfig": { "access": "public" },
+  "keywords": [],
+  "author": "vbcc2001",
+  "license": "ISC",
+  "type": "module",
   "exports": {
     "./base": "./base.js",
     "./next-js": "./next.js",
